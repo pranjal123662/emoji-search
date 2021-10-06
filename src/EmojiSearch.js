@@ -1,6 +1,5 @@
 import React from "react";
 import EmojiData from "./emojiList.json";
-// import { CopyToClipboard } from "react-copy-to-clipboard";
 class Emoji extends React.Component {
   constructor() {
     super();
@@ -12,11 +11,6 @@ class Emoji extends React.Component {
   handleChange = (event) => {
     this.setState({
       searchText: event.target.value,
-    });
-  };
-  handleCopy = (event) => {
-    this.setState({
-      copy: true,
     });
   };
   render() {
@@ -62,15 +56,7 @@ class Emoji extends React.Component {
                 }}
               >
                 <li className="result">{item.symbol}</li>
-
-                {/* <CopyToClipboard
-                  text={item.symbol}
-                  onCopy={this.handleCopy}
-                ></CopyToClipboard> */}
               </div>
-              // <CopyToClipboard text={item.symbol} onCopy={this.handleCopy}>
-              //   Copy to clipboard
-              // </CopyToClipboard>
             );
           })}
         </div>

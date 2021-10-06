@@ -26,6 +26,7 @@ body {
 
 input {
   width: 70%;
+  border-radius: 0px 0px 16px 16px;
 }
 
 .EmojiData hr {
@@ -48,13 +49,14 @@ input {
   height: fit-content;
   max-height: 200px;
   background-color: white;
+  border-radius: 0px 0px 16px 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   overflow-y: auto;
 }
-/* .dataItem::-webkit-scrollbar {
+.dataItem::-webkit-scrollbar {
   display: none;
-} */
+}
 
 .dataItem .result {
   width: 100%;
