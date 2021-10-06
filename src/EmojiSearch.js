@@ -23,7 +23,11 @@ class Emoji extends React.Component {
     return (
       <div className="Emoji">
         <div className="header-container">
-          <h1 className="EmojiSearch">Emoji Search</h1>
+          <div className="EmojiSearch1">{EmojiData[2].symbol}</div>
+          <div className="EmojiSearch">
+            <h1>Emoji Search</h1>
+          </div>
+          <div className="EmojiSearch2">{EmojiData[2].symbol}</div>
         </div>
 
         <div className="Search">
@@ -57,9 +61,8 @@ class Emoji extends React.Component {
                   navigator.clipboard.writeText(item.symbol);
                 }}
               >
-                <ul className="result">
-                  <li className="result1">{item.symbol}</li>
-                </ul>
+                <li className="result">{item.symbol}</li>
+
                 {/* <CopyToClipboard
                   text={item.symbol}
                   onCopy={this.handleCopy}
